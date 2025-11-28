@@ -1,0 +1,224 @@
+/* SIFIRLAMA & TEMEL */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #0d0d0d; /* Derin Siyah */
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container { width: 90%; max-width: 1150px; margin: 0 auto; }
+
+/* NAVBAR */
+.navbar {
+    background: rgba(13, 13, 13, 0.9);
+    padding: 20px 0;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+}
+
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+
+.brand {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00d4ff;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+.nav-list { list-style: none; }
+.nav-list li { display: inline-block; margin-left: 20px; }
+.nav-list a { text-decoration: none; color: #bbb; font-weight: 500; transition: 0.3s; }
+.nav-list a:hover { color: #00d4ff; }
+
+.cta-btn {
+    background: #00d4ff;
+    color: #000 !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.15);
+}
+
+/* HERO */
+.hero {
+    padding: 100px 0;
+    background: radial-gradient(circle at top right, #1a1a1a 0%, #0d0d0d 100%);
+    border-bottom: 1px solid #222;
+}
+
+.hero-flex { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+
+.code-tag {
+    font-family: 'Courier Prime', monospace;
+    color: #00ff88;
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    padding: 5px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 { font-size: 3.2rem; color: #fff; line-height: 1.1; margin-bottom: 10px; }
+.hero-text h2 { font-size: 1.5rem; color: #888; font-weight: 300; margin-bottom: 20px; }
+
+.hero-img img {
+    width: 260px; height: 260px; object-fit: cover;
+    border-radius: 50%; border: 3px solid #222;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.1);
+    transition: transform 0.3s;
+}
+.hero-img img:hover { transform: scale(1.03); border-color: #00d4ff; }
+
+/* BÖLÜMLER */
+.section { padding: 80px 0; }
+.bg-darker { background-color: #080808; }
+
+.section-title {
+    font-size: 2rem; color: #fff;
+    border-left: 5px solid #00d4ff;
+    padding-left: 20px; margin-bottom: 50px;
+}
+
+/* BİYOGRAFİ */
+.bio-content {
+    background: linear-gradient(145deg, #141414, #0f0f0f);
+    padding: 40px; border-radius: 12px;
+    border: 1px solid #222;
+}
+.bio-text p { color: #ccc; margin-bottom: 15px; font-size: 1.05rem; }
+.bio-text strong { color: #fff; font-weight: 600; }
+
+/* EĞİTİM */
+.education-grid { display: flex; gap: 30px; flex-wrap: wrap; }
+.edu-card {
+    flex: 1; min-width: 300px;
+    background: #141414; padding: 30px;
+    border-radius: 10px; border: 1px solid #222;
+    transition: 0.3s;
+}
+.edu-card:hover { border-color: #00d4ff; transform: translateY(-5px); }
+.edu-card .icon { font-size: 2.2rem; margin-bottom: 15px; }
+.edu-card h3 { color: #fff; margin-bottom: 5px; font-size: 1.3rem; }
+.dept { color: #00d4ff; font-weight: bold; }
+.link { color: #00ff88; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 15px; }
+
+/* TABLO */
+.skills-table {
+    width: 100%; border-collapse: collapse;
+    background: #141414; border-radius: 10px; overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.skills-table th { background: #1f1f1f; color: #00ff88; padding: 20px; text-align: left; }
+.skills-table td { padding: 20px; border-bottom: 1px solid #222; color: #ccc; }
+.skills-table tr:hover { background-color: #1a1a1a; }
+
+/* PROJELER (3'lü Düzen) */
+.projects-wrapper { 
+    display: flex; 
+    gap: 25px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+/* YENİ EKLEMEN GEREKEN KISIM */
+.project-box {
+    /* --- DEĞİŞTİRDİĞİMİZ KISIMLAR --- */
+    
+    /* flex: 1 yerine bunu yazıyoruz. Bu, kutunun genişliğini zorla %50 yapar */
+    flex: 0 0 calc(50% - 25px); 
+    
+    /* max-width: 350px'i siliyoruz veya 'none' yapıyoruz ki kutular 2'li olunca yayılsın */
+    max-width: none; 
+    
+    /* -------------------------------- */
+
+    min-width: 280px;
+    background: #141414; 
+    padding: 30px;
+    border: 1px solid #222; 
+    border-radius: 10px;
+    transition: 0.3s; 
+    display: flex; 
+    flex-direction: column;
+    
+    /* Kutu hesaplamasının düzgün olması için */
+    box-sizing: border-box;
+}
+.project-box:hover { border-color: #00ff88; box-shadow: 0 5px 15px rgba(0, 255, 136, 0.05); }
+.project-box h3 { color: #fff; margin-bottom: 10px; font-size: 1.2rem; }
+.project-box p { flex-grow: 1; color: #999; margin-bottom: 15px; font-size: 0.95rem; }
+.tag { 
+    font-size: 0.8rem; background: #222; color: #ccc; 
+    padding: 4px 8px; border-radius: 4px; align-self: flex-start; margin-bottom: 15px;
+}
+.project-box a { color: #00d4ff; text-decoration: none; font-weight: bold; }
+
+/* İLETİŞİM */
+.contact-layout { display: flex; gap: 50px; flex-wrap: wrap; }
+.social-side { flex: 1; min-width: 250px; }
+.form-side { flex: 2; min-width: 320px; }
+
+.social-btn {
+    display: block; padding: 16px; margin: 12px 0;
+    color: #fff; text-decoration: none; font-weight: bold;
+    border-radius: 8px; text-align: center; transition: 0.2s;
+}
+.discord { background: #5865F2; }
+.steam { background: #171a21; border: 1px solid #444; }
+.instagram { background: linear-gradient(45deg, #f09433, #bc1888); }
+.social-btn:hover { opacity: 0.9; transform: translateX(5px); }
+
+/* FORM */
+.glass-form label { display: block; color: #bbb; margin-bottom: 5px; font-size: 0.9rem; }
+.glass-form input, .glass-form textarea, .glass-form select {
+    width: 100%; padding: 14px; margin-bottom: 20px;
+    background: #111; border: 1px solid #333; color: #fff;
+    border-radius: 6px; font-family: 'Inter';
+}
+.glass-form input:focus, .glass-form textarea:focus, .glass-form select:focus {
+    outline: none; border-color: #00ff88; background: #161616;
+}
+.glass-form button {
+    width: 100%; padding: 15px; background: #00ff88;
+    border: none; color: #000; font-weight: 800;
+    cursor: pointer; border-radius: 6px; font-size: 1rem; transition: 0.3s;
+}
+.glass-form button:hover { background: #00e078; }
+
+.map-container iframe {
+    margin-top: 20px; border-radius: 10px; border: 1px solid #333;
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #666; margin-top: 20px; }
+footer span { color: #00ff88; font-family: 'Courier Prime'; }
+
+/* MOBİL */
+@media (max-width: 768px) {
+    .hero-flex, .contact-layout { flex-direction: column; }
+    .nav-list { display: none; }
+    .navbar .container { justify-content: center; }
+    .hero-text h1 { font-size: 2.5rem; text-align: center; }
+    .hero-text { text-align: center; }
+}
+
+
+/*
+ ___  ___  ________  ___       ___  _________  ________  ___  ___  ________   ________  ________  ________      ________  _______   ___      ___ 
+|\  \|\  \|\   __  \|\  \     |\  \|\___   ___\\   ____\|\  \|\  \|\   ___  \|\   ____\|\   __  \|\   ____\    |\   ___ \|\  ___ \ |\  \    /  /|
+\ \  \\\  \ \  \|\  \ \  \    \ \  \|___ \  \_\ \  \___|\ \  \\\  \ \  \\ \  \ \  \___|\ \  \|\  \ \  \___|    \ \  \_|\ \ \   __/|\ \  \  /  / /
+ \ \   __  \ \   __  \ \  \    \ \  \   \ \  \ \ \  \  __\ \  \\\  \ \  \\ \  \ \_____  \ \  \\\  \ \  \____    \ \  \ \\ \ \  \_|/_\ \  \/  / / 
+  \ \  \ \  \ \  \ \  \ \  \____\ \  \   \ \  \ \ \  \|\  \ \  \\\  \ \  \\ \  \|____|\  \ \  \\\  \ \  ___  \ __\ \  \_\\ \ \  \_|\ \ \    / /  
+   \ \__\ \__\ \__\ \__\ \_______\ \__\   \ \__\ \ \_______\ \_______\ \__\\ \__\____\_\  \ \_______\ \_______\\__\ \_______\ \_______\ \__/ /   
+    \|__|\|__|\|__|\|__|\|_______|\|__|    \|__|  \|_______|\|_______|\|__| \|__|\_________\|_______|\|_______\|__|\|_______|\|_______|\|__|/    
+                                                                                \|_________|                                                     
+                                                                                                                                                 
+                                                                                                                                                  
+*/
