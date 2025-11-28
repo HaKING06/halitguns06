@@ -173,6 +173,7 @@ body {
 .discord { background: #5865F2; }
 .steam { background: #171a21; border: 1px solid #444; }
 .instagram { background: linear-gradient(45deg, #f09433, #bc1888); }
+.linkedin { background: linear-gradient(135deg, #0077B5, #006093); }
 .social-btn:hover { opacity: 0.9; transform: translateX(5px); }
 
 /* FORM */
