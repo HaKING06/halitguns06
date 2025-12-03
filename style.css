@@ -9,7 +9,7 @@ body {
 
 .container { width: 90%; max-width: 1150px; margin: 0 auto; }
 
-/* NAVBAR kısmı*/
+/* NAVBAR Kısmı*/
 .navbar {
     background: rgba(13, 13, 13, 0.9);
     padding: 20px 0;
@@ -49,6 +49,7 @@ body {
 
 }
 
+/* HERO(Giriş) Kısmı*/
 .hero {
     padding: 100px 0;
     background: radial-gradient(circle at top right, #1a1a1a 0%, #0d0d0d 100%);
@@ -79,7 +80,7 @@ body {
 }
 .hero-img img:hover { transform: scale(1.03); border-color: #00d4ff; }
 
-/* BÖLÜMLER kısmı */
+/* BÖLÜMLER Kısmı*/
 .section { padding: 80px 0; }
 .bg-darker { background-color: #080808; }
 
@@ -89,7 +90,7 @@ body {
     padding-left: 20px; margin-bottom: 50px;
 }
 
-/* BİYOGRAFİ kısmı */
+/* BİYOGRAFİ Kısmı*/
 .bio-content {
     background: linear-gradient(145deg, #141414, #0f0f0f);
     padding: 40px; border-radius: 12px;
@@ -98,7 +99,7 @@ body {
 .bio-text p { color: #ccc; margin-bottom: 15px; font-size: 1.05rem; }
 .bio-text strong { color: #fff; font-weight: 600; }
 
-/* EĞİTİM kısmı*/
+/* EĞİTİM Kısmı*/
 .education-grid { display: flex; gap: 30px; flex-wrap: wrap; }
 .edu-card {
     flex: 1; min-width: 300px;
@@ -112,7 +113,7 @@ body {
 .dept { color: #00d4ff; font-weight: bold; }
 .link { color: #00ff88; text-decoration: none; font-size: 0.9rem; display: block; margin-top: 15px; }
 
-/* TABLO kısmı*/
+/* TABLO Kısmı*/
 .skills-table {
     width: 100%; border-collapse: collapse;
     background: #141414; border-radius: 10px; overflow: hidden;
@@ -122,7 +123,7 @@ body {
 .skills-table td { padding: 20px; border-bottom: 1px solid #222; color: #ccc; }
 .skills-table tr:hover { background-color: #1a1a1a; }
 
-/* PROJELER kısmı */
+/* PROJELER Kısmı*/
 .projects-wrapper { 
     display: flex; 
     gap: 25px; 
@@ -132,7 +133,6 @@ body {
 
 .project-box {
     flex: 0 0 calc(50% - 25px); 
-    
     max-width: none; 
     min-width: 280px;
     background: #141414; 
@@ -153,7 +153,7 @@ body {
 }
 .project-box a { color: #00d4ff; text-decoration: none; font-weight: bold; }
 
-/* İLETİŞİM kısmı */
+/* İLETİŞİM */
 .contact-layout { display: flex; gap: 50px; flex-wrap: wrap; }
 .social-side { flex: 1; min-width: 250px; }
 .form-side { flex: 2; min-width: 320px; }
@@ -195,7 +195,7 @@ body {
 footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #666; margin-top: 20px; }
 footer span { color: #00ff88; font-family: 'Courier Prime'; }
 
-/* MOBİL kısmı(bonus kısım - konu dışı)*/
+/* MOBİL kısmı (bonus - konu dışı)*/
 @media (max-width: 768px) {
     .hero-flex, .contact-layout { flex-direction: column; }
     .nav-list { display: none; }
@@ -215,5 +215,5 @@ footer span { color: #00ff88; font-family: 'Courier Prime'; }
     \|__|\|__|\|__|\|__|\|_______|\|__|    \|__|  \|_______|\|_______|\|__| \|__|\_________\|_______|\|_______\|__|\|_______|\|_______|\|__|/    
                                                                                 \|_________|                                                     
                                                                                                                                                  
-                                                                                                                                            
+                                                                                                                                                  
 */
